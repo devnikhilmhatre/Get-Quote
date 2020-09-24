@@ -6,6 +6,11 @@
 	"engines": {
 		"vscode": "^1.49.0"
 	},
+	"publisher": "devnikhilmhatre",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/devnikhilmhatre/Get-Quote"
+	},
 	"categories": [
 		"Other"
 	],

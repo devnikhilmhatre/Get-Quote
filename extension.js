@@ -24,14 +24,15 @@ function getQuote(context, show) {
 }
 
 function activate(context) {
-	getQuote(context, false)
-
+	
 	let disposable = vscode.commands.registerCommand('quote-of-the-day.quote', function () {
 		getQuote(context, true)
 	});
 
 	context.subscriptions.push(getQuote);
 	context.subscriptions.push(disposable);
+
+	getQuote(context, false)
 }
 
 exports.activate = activate;
